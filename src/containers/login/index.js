@@ -53,6 +53,10 @@ class LoginContainer extends Component {
                 <button type="submit" class="btn btn-primary loginButton mt-2">
                   Submit
                 </button>
+                <p className="createAccountText pt-2 pb-2">
+                  Dont have an account?
+                  <span className="createAccountLabel">Create an account</span>
+                </p>
               </form>
             </div>
           </div>

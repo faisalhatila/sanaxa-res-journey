@@ -1,0 +1,44 @@
+/**************************************************Login Page Start***********************************/
+.loginPageMainDiv {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.loginScreenRow1 {
+  transform: translateY(30%);
+}
+.loginScreenRow1 > h2,
+.loginScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.loginPageFormDiv {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px;
+  /* min-width: 100%; */
+  /* margin: 0; */
+}
+.loginPageFormDiv > p {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+.loginButton {
+  background-color: #b40008;
+  color: #fff;
+  min-width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+}
+.loginButton:hover {
+  background-color: #fff;
+  color: #b40008;
+  box-shadow: 0px 0px 5px 2px;
+}
+/**************************************************Login Page End***********************************/

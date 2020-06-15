@@ -1,0 +1,109 @@
+/**************************************************Login Page Start***********************************/
+.loginPageMainDiv {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.loginScreenRow1 {
+  transform: translateY(30%);
+}
+.loginScreenRow1 > h2,
+.loginScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.loginPageFormDiv {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px;
+  /* min-width: 100%; */
+  /* margin: 0; */
+}
+.loginPageFormDiv > p {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+.loginButton {
+  background-color: #b40008;
+  color: #fff;
+  min-width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+}
+.loginButton:hover {
+  background-color: #fff;
+  color: #b40008;
+  box-shadow: 0px 0px 5px 2px;
+}
+.createAccountText {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+}
+.createAccountLabel {
+  color: #b40008;
+}
+/**************************************************Login Page End***********************************/
+/**************************************************Top Menu Component Start***********************************/
+.topMenuMainDiv {
+  background-color: #ed1b24;
+}
+.topMenuMainDiv > div > div {
+  padding: 4px 0;
+}
+.topMenuMainDiv > div > div > p {
+  margin: 0;
+  color: #fff;
+}
+.topMenuMainDiv > div > div > div > div > p {
+  margin: 0;
+}
+.topMenuMainDiv > div > div > div > div > i,
+.topMenuMainDiv > div > div > div > i {
+  color: #000;
+}
+.topMenuMainDiv > div > div > div > div > i {
+  font-size: 20px;
+  background-color: #ffd9d9;
+  border-radius: 50%;
+  padding: 10px;
+}
+.userInfoDiv {
+  background-color: #fff;
+  padding: 3px 10px;
+}
+.userName {
+  font-size: 13px;
+  color: #000;
+}
+.userJoiningStartDate {
+  font-size: 10px;
+  transform: translateY(-4px);
+  text-align: center;
+  color: gray;
+}
+/**************************************************Top Menu Component End***********************************/
+.leftMenuMainDiv {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  min-height: 80vh;
+  margin: 0;
+  text-align: center;
+  color: #ed1b24;
+}
+.leftMenuContainer {
+  padding-left: 0;
+}
+.leftMenuMenuLinksMainDiv > ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}

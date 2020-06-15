@@ -42,3 +42,42 @@
   box-shadow: 0px 0px 5px 2px;
 }
 /**************************************************Login Page End***********************************/
+/**************************************************Top Menu Component Start***********************************/
+.topMenuMainDiv {
+  background-color: #ed1b24;
+}
+.topMenuMainDiv > div > div {
+  padding: 4px 0;
+}
+.topMenuMainDiv > div > div > p {
+  margin: 0;
+  color: #fff;
+}
+.topMenuMainDiv > div > div > div > div > p {
+  margin: 0;
+}
+.topMenuMainDiv > div > div > div > div > i,
+.topMenuMainDiv > div > div > div > i {
+  color: #000;
+}
+.topMenuMainDiv > div > div > div > div > i {
+  font-size: 20px;
+  background-color: #ffd9d9;
+  border-radius: 50%;
+  padding: 10px;
+}
+.userInfoDiv {
+  background-color: #fff;
+  padding: 3px 10px;
+}
+.userName {
+  font-size: 13px;
+  color: #000;
+}
+.userJoiningStartDate {
+  font-size: 10px;
+  transform: translateY(-4px);
+  text-align: center;
+  color: gray;
+}
+/**************************************************Top Menu Component End***********************************/

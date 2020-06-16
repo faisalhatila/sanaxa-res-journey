@@ -1,11 +1,14 @@
 import React, { Component } from "react";
-import { LeftMenu } from "../../components";
+import { LeftMenu, DataCounter } from "../../components";
 
 export default class Dashboard extends Component {
   render() {
     return (
-      <div>
-        <LeftMenu />
+      <div className="container">
+        <div className="row">
+          <LeftMenu />
+          <DataCounter />
+        </div>
       </div>
     );
   }

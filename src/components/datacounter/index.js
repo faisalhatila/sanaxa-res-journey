@@ -9,7 +9,7 @@ const DataCounter = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="col-12 col-lg-9 col-md-9 mt-4">
+    <div className="">
       <div className="row dataCounterRow">
         <div className="col-6 col-lg-3 col-md-3">
           <div className="counterRowDataCols">

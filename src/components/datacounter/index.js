@@ -9,7 +9,38 @@ const DataCounter = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="col-12 col-lg-9 col-md-9">Hello</div>
+    <div className="col-12 col-lg-9 col-md-9 mt-4">
+      <div className="row dataCounterRow">
+        <div className="col-6 col-lg-3 col-md-3">
+          <div className="counterRowDataCols">
+            <i class="fas fa-hand-holding-usd counterRowDataIcons"></i>
+            <p className="counterRowDataValues">$10,275</p>
+            <p className="counterRowDataType">Total Sales</p>
+          </div>
+        </div>
+        <div className="col-6 col-lg-3 col-md-3">
+          <div className="counterRowDataCols">
+            <i class="fas fa-hand-holding-usd counterRowDataIcons"></i>
+            <p className="counterRowDataValues">$10,275</p>
+            <p className="counterRowDataType">Total Sales</p>
+          </div>
+        </div>
+        <div className="col-6 col-lg-3 col-md-3">
+          <div className="counterRowDataCols">
+            <i class="fas fa-hand-holding-usd counterRowDataIcons"></i>
+            <p className="counterRowDataValues">$10,275</p>
+            <p className="counterRowDataType">Total Sales</p>
+          </div>
+        </div>
+        <div className="col-6 col-lg-3 col-md-3">
+          <div className="counterRowDataCols">
+            <i class="fas fa-hand-holding-usd counterRowDataIcons"></i>
+            <p className="counterRowDataValues">$10,275</p>
+            <p className="counterRowDataType">Total Sales</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

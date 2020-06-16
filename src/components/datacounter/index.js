@@ -11,3 +11,5 @@ const DataCounter = () => {
     </div>
   );
 };
+
+export default DataCounter;

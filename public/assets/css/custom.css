@@ -89,6 +89,7 @@
   color: gray;
 }
 /**************************************************Top Menu Component End***********************************/
+/**************************************************Left Menu Component Start***********************************/
 .leftMenuMainDiv {
   background-color: #fff;
   box-shadow: 0px 0px 5px 2px #ccc;
@@ -108,6 +109,8 @@
   padding-left: 0;
   text-align: left;
 }
+/**************************************************Left Menu Component End***********************************/
+/**************************************************Counter Data Component Start***********************************/
 
 .dataCounterRow {
   background-color: #fff;
@@ -135,14 +138,41 @@
   color: #bf282e;
   margin: 0;
 }
+/**************************************************Counter Data Component End***********************************/
+/**************************************************Graph Component Start***********************************/
 .leftGraph {
   background-color: #fff;
   box-shadow: 0px 0px 5px 2px #ccc;
   border-radius: 5px;
 }
-
+/**************************************************Graph Component End***********************************/
+/**************************************************Customer Management Component Start***********************************/
 .customermanagementtable {
   box-shadow: 0px 0px 5px 2px #ccc;
   border-radius: 5px;
   padding: 10px;
+}
+/**************************************************Customer Management Component End***********************************/
+
+.customerDetailFormTitle {
+  /* box-shadow: 0px -3px 5px 2px #ccc; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  /* border-bottom: solid #fff; */
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.customerDetailFormMainDiv {
+  /* box-shadow: 0px 0px 4px 2px #ccc; */
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px #ccc;
+  /* transform: translateY(-2px);*/
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

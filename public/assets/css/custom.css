@@ -161,7 +161,7 @@
   border-top: solid 1px #ccc;
   border-right: solid 1px #ccc;
   border-left: solid 1px #ccc;
-  /* border-bottom: solid #fff; */
+  border-bottom: solid #fff;
   z-index: 10;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -172,7 +172,7 @@
   border-bottom-left-radius: 5px;
   border-top-right-radius: 5px;
   border: solid 1px #ccc;
-  /* transform: translateY(-2px);*/
+  transform: translateY(-2px);
   padding-top: 10px;
   padding-bottom: 10px;
 }

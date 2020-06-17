@@ -7,6 +7,7 @@ import {
   LoginContainer,
   PageNotFound,
   Dashboard,
+  CustomerManagement,
 } from "../containers";
 const Router = (props) => {
   return (
@@ -14,6 +15,7 @@ const Router = (props) => {
       <Route exact path="/" component={HomeContainer} />
       <PvtRoute exact path="/login" component={LoginContainer} />
       <Route exact path="/dashboard" component={Dashboard} />
+      <Route exact path="/customer-management" component={CustomerManagement} />
       <Route exact path="/404" component={PageNotFound} />
       <Route exact path="/*" component={() => <Redirect to="/404" />} />
     </Switch>

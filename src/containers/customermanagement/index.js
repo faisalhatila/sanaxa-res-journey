@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LeftMenu } from "../../components";
+import { LeftMenu, CustomerManagementTable } from "../../components";
 
 export default class CustomerManagement extends Component {
   render() {
@@ -7,7 +7,9 @@ export default class CustomerManagement extends Component {
       <div className="container">
         <div className="row">
           <LeftMenu />
-          <div className="col-12 col-lg-9 col-md-9 mt-4"></div>
+          <div className="col-12 col-lg-9 col-md-9 mt-4 customermanagementtable">
+            <CustomerManagementTable />
+          </div>
         </div>
       </div>
     );

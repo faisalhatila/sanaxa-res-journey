@@ -4,7 +4,7 @@ import _Layout from "./layout";
 import _LeftMenu from "./leftmenu";
 import _TopMenu from "./topmenu";
 import _DataCounter from "./datacounter";
-import _LineChart from "./linechartcomponent";
+import _LineChart from "./chartcomponent";
 import _LChart from "./linechart";
 
 export const Header = _Header;

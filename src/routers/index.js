@@ -15,6 +15,7 @@ const Router = (props) => {
     <Switch>
       <Route exact path="/" component={HomeContainer} />
       <PvtRoute exact path="/login" component={LoginContainer} />
+      <PvtRoute exact path="/register" component={LoginContainer} />
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/customer-management" component={CustomerManagement} />
       <Route exact path="/add-customer" component={AddCustomer} />

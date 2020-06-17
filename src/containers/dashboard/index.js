@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { LeftMenu, DataCounter, LineChart } from "../../components";
+import { LeftMenu, DataCounter, Chart } from "../../components";
 
 export default class Dashboard extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class Dashboard extends Component {
           <div className="col-12 col-lg-9 col-md-9 mt-4">
             <DataCounter />
             <div className="row">
-              <LineChart />
+              <Chart />
             </div>
           </div>
         </div>

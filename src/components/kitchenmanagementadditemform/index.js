@@ -4,12 +4,12 @@ const AddItem = () => {
   return (
     <div className="row">
       <div className="col-4 col-lg-3 col-md-3 updateVendorFormTitle">
-        Category Details
+        Item Details
       </div>
       <div className="col-12 customerDetailFormMainDiv d-lg-flex d-md-flex">
         <form className="col-12 col-lg-6 col-md-6 updateVendorForm">
           <div class="form-group">
-            <label for="exampleInputEmail1">Category Name</label>
+            <label for="exampleInputEmail1">Item Name</label>
             <input
               type="text"
               class="form-control"
@@ -19,7 +19,7 @@ const AddItem = () => {
             />
           </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="exampleFormControlTextarea1">Description</label>
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
@@ -58,7 +58,7 @@ const AddItem = () => {
             </label>
           </div>
           <button type="submit" class="btn btn-primary mt-3">
-            Add Category
+            Add Item
           </button>
         </form>
       </div>

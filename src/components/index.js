@@ -9,6 +9,7 @@ import _LChart from "./linechart";
 import _BChart from "./barchart";
 import _CustomerManagementTable from "./customermanagementtable";
 import _NewCustomer from "./newcustomer";
+import _RestaurantManagementTable from "./restaurantmanagementtable";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -21,3 +22,4 @@ export const LChart = _LChart;
 export const BChart = _BChart;
 export const CustomerManagementTable = _CustomerManagementTable;
 export const NewCustomer = _NewCustomer;
+export const RestaurantManagementTable = _RestaurantManagementTable;

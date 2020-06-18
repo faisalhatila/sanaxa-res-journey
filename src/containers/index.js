@@ -8,6 +8,7 @@ import _Register from "./register";
 import _RestaurantManagement from "./restaurantmanagement";
 import _OrdertManagement from "./ordermanagement";
 import _UpdateVendor from "./updatevendor";
+import _KitchenManagement from "./kitchenmanagement";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -19,3 +20,4 @@ export const Register = _Register;
 export const RestaurantManagement = _RestaurantManagement;
 export const OrdertManagement = _OrdertManagement;
 export const UpdateVendor = _UpdateVendor;
+export const KitchenManagement = _KitchenManagement;

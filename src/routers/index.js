@@ -10,6 +10,7 @@ import {
   CustomerManagement,
   AddCustomer,
   Register,
+  RestaurantManagement,
 } from "../containers";
 const Router = (props) => {
   return (
@@ -19,6 +20,11 @@ const Router = (props) => {
       <PvtRoute exact path="/register" component={Register} />
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/customer-management" component={CustomerManagement} />
+      <Route
+        exact
+        path="/restaurant-management"
+        component={RestaurantManagement}
+      />
       <Route exact path="/add-customer" component={AddCustomer} />
       <Route exact path="/404" component={PageNotFound} />
       <Route exact path="/*" component={() => <Redirect to="/404" />} />

@@ -13,6 +13,7 @@ import _RestaurantManagementTable from "./restaurantmanagementtable";
 import _OrderManagementTable from "./ordermanagementtable";
 import _UpdateVendorForm from "./updatevendorform";
 import _KitchenManagementTable from "./kitchenmanagementtable";
+import _KitchenMenuTable from "./kitchenmenutable";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -29,3 +30,4 @@ export const RestaurantManagementTable = _RestaurantManagementTable;
 export const OrderManagementTable = _OrderManagementTable;
 export const UpdateVendorForm = _UpdateVendorForm;
 export const KitchenManagementTable = _KitchenManagementTable;
+export const KitchenMenuTable = _KitchenMenuTable;

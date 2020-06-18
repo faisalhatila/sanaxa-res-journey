@@ -67,7 +67,7 @@ export default class KitchenManagementTable extends Component {
       <div class="container">
         <div className="d-flex" style={{ padding: "10px 0" }}>
           <button type="button" class="btn btn-primary mr-3">
-            Primary
+            + Add New
           </button>
           <div style={{ margin: 0 }} class="form-group">
             <input

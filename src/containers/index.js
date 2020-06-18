@@ -12,6 +12,7 @@ import _KitchenManagement from "./kitchenmanagementcategory";
 import _KitchenMenu from "./kitchenmenu";
 import _KitchenManagementAddCategory from "./kitchenmanagementaddcategory";
 import _KitchenManagementAddItem from "./kitchenmanagementadditem";
+import _OrderDetails from "./orderdetails";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -27,3 +28,4 @@ export const KitchenManagement = _KitchenManagement;
 export const KitchenMenu = _KitchenMenu;
 export const KitchenManagementAddCategory = _KitchenManagementAddCategory;
 export const KitchenManagementAddItem = _KitchenManagementAddItem;
+export const OrderDetails = _OrderDetails;

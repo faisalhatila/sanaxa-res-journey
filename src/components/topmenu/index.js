@@ -1,6 +1,6 @@
 import React from "react";
 
-const TopMenu = () => {
+const TopMenu = (props) => {
   return (
     <div className="topMenuMainDiv">
       <div className="container">
@@ -8,7 +8,7 @@ const TopMenu = () => {
           <p>
             <i class="far fa-question-circle"></i>Help
           </p>
-          <p>Dashboard</p>
+          <p>{props.name}</p>
           <div className="userInfoDiv d-flex align-items-center">
             <div className="mr-2">
               <i class="far fa-user"></i>

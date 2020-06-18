@@ -2,11 +2,12 @@ import React from "react";
 import { Route as ReactRouter } from "react-router-dom";
 import { Footer, Header, Layout } from "../components";
 
-const Route = props => {
+const Route = (props) => {
+  let name = props.component.name;
   const withoutHeaderAndFooter = props.withoutHeaderAndFooter;
   const schema = (
     <React.Fragment>
-      {!withoutHeaderAndFooter && <Header />}
+      {!withoutHeaderAndFooter && <Header name={name} />}
       <ReactRouter {...props} />
       {!withoutHeaderAndFooter && <Footer />}
     </React.Fragment>

@@ -89,6 +89,7 @@
   color: gray;
 }
 /**************************************************Top Menu Component End***********************************/
+/**************************************************Left Menu Component Start***********************************/
 .leftMenuMainDiv {
   background-color: #fff;
   box-shadow: 0px 0px 5px 2px #ccc;
@@ -97,6 +98,7 @@
   margin: 0;
   text-align: center;
   color: #ed1b24;
+  padding: 15px;
 }
 .leftMenuContainer {
   padding-left: 0;
@@ -107,3 +109,141 @@
   padding-left: 0;
   text-align: left;
 }
+/**************************************************Left Menu Component End***********************************/
+/**************************************************Counter Data Component Start***********************************/
+
+.dataCounterRow {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+.counterRowDataCols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+.counterRowDataIcons {
+  font-size: 50px;
+  color: #bf282e;
+}
+.counterRowDataValues {
+  margin: 0;
+  font-weight: 800;
+  font-size: 25px;
+  color: #bf282e;
+}
+.counterRowDataType {
+  font-size: 12px;
+  color: #bf282e;
+  margin: 0;
+}
+/**************************************************Counter Data Component End***********************************/
+/**************************************************Graph Component Start***********************************/
+.leftGraph {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+/**************************************************Graph Component End***********************************/
+/**************************************************Customer Management Component Start***********************************/
+.customermanagementtable {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+/**************************************************Customer Management Component End***********************************/
+/**************************************************Customer Add Component Start***********************************/
+
+.customerDetailFormTitle {
+  /* box-shadow: 0px -3px 5px 2px #ccc; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  border-bottom: solid #fff;
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.customerDetailFormMainDiv {
+  /* box-shadow: 0px 0px 4px 2px #ccc; */
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px #ccc;
+  transform: translateY(-2px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/**************************************************Customer Add Component End***********************************/
+/**************************************************Register Component Start***********************************/
+.facebookDiv {
+  background-color: #3b5998;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.facebookDiv > i,
+.facebookDiv > p {
+  color: #fff;
+}
+.facebookDiv > p {
+  margin: 0;
+}
+.googleDiv {
+  background-color: #de5246;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.googleDiv > i,
+.googleDiv > p {
+  color: #fff;
+}
+.googleDiv > p {
+  margin: 0;
+}
+.signupScreenRow1 {
+  transform: translateY(5%);
+}
+.signupScreenRow1 > h2,
+.signupScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.genderMainDiv {
+  border: solid 1px #ccc;
+  /* padding: 7px 10px; */
+  border-radius: 5px;
+  justify-content: space-around;
+}
+.genderDiv {
+  min-width: 50%;
+  text-align: center;
+  padding: 5px;
+}
+.dateInputDiv {
+  border: solid 1px #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dateInputDiv > input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  /* display: flex; */
+  min-width: 100%;
+}
+.signUpPageMainDiv {
+  min-width: 100%;
+  min-height: 170vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/**************************************************Register Component End***********************************/

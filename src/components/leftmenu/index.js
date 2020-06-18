@@ -2,7 +2,7 @@ import React from "react";
 
 const LeftMenu = () => {
   return (
-    <div className="mt-4 col-3">
+    <div className="mt-4 col-12 col-lg-3 col-md-3">
       <div className="container leftMenuContainer">
         <div className="leftMenuMainDiv">
           <h2>

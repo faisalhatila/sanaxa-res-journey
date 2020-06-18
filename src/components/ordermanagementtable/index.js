@@ -79,11 +79,35 @@ export default class CustomerManagementTable extends Component {
     const { data } = this.state;
     return (
       <div class="container">
-        <div className="d-flex" style={{ padding: "10px 0" }}>
-          <button type="button" class="btn btn-primary mr-3">
-            Primary
-          </button>
-          <div style={{ margin: 0 }} class="form-group">
+        <div className="row" style={{ padding: "10px 0" }}>
+          <div
+            style={{ margin: 0 }}
+            class="form-group col-12 col-lg-3 col-md-3"
+          >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div
+            style={{ margin: 0 }}
+            class="form-group col-12 col-lg-3 col-md-3"
+          >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+          </div>
+          <div
+            style={{ margin: 0 }}
+            class="form-group col-12 col-lg-3 col-md-3"
+          >
             <input
               type="email"
               class="form-control"
@@ -93,7 +117,7 @@ export default class CustomerManagementTable extends Component {
             />
           </div>
           <button type="button" class="btn btn-primary ml-3">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-filter"></i>
           </button>
         </div>
         <table class="table table-hover">

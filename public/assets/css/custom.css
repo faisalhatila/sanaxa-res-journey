@@ -268,3 +268,52 @@
   font-weight: 700;
 }
 /**************************************************Update Vendor Form Component End***********************************/
+.statusHeadingDiv {
+  /* border-bottom: solid 1px #ccc; */
+  background-color: #f6f6f6;
+}
+.statusHeadingDiv > div > p {
+  margin: 0;
+  background-color: #f6f6f6;
+  font-weight: 700;
+  /* border-bottom: solid 1px #ccc; */
+  background-color: #f6f6f6;
+  padding: 10px 0;
+}
+.orderDetailsRow1 {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.orderStatusDropdownDiv {
+  padding: 5px;
+}
+.orderDescriptionParaDiv {
+  padding: 5px;
+}
+.orderDescriptionParaDiv > p {
+  margin: 0;
+}
+.orderDescriptionPara {
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.orderDetailsRow2Col1 {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+.orderDetailsRow2Col1TitleDiv {
+  background-color: #f6f6f6;
+  padding: 5px 10px;
+}
+.orderDetailsRow2Col1TitleDiv > p,
+.orderDetailsRow2Col1DescriptionDiv > p {
+  margin: 0;
+}
+.orderDetailsRow2Col1DescriptionDiv {
+  padding: 5px 10px;
+}
+.bold {
+  font-weight: 600;
+}

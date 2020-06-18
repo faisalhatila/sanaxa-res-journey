@@ -17,6 +17,7 @@ import {
   KitchenMenu,
   KitchenManagementAddCategory,
   KitchenManagementAddItem,
+  OrderDetails,
 } from "../containers";
 const Router = (props) => {
   return (
@@ -32,6 +33,7 @@ const Router = (props) => {
         component={RestaurantManagement}
       />
       <Route exact path="/order-management" component={OrdertManagement} />
+      <Route exact path="/order-details" component={OrderDetails} />
       <Route exact path="/update-vendor" component={UpdateVendor} />
       <Route
         exact

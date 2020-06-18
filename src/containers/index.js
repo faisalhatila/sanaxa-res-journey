@@ -11,6 +11,7 @@ import _UpdateVendor from "./updatevendor";
 import _KitchenManagement from "./kitchenmanagementcategory";
 import _KitchenMenu from "./kitchenmenu";
 import _KitchenManagementAddCategory from "./kitchenmanagementaddcategory";
+import _KitchenManagementAddItem from "./kitchenmanagementadditem";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -25,3 +26,4 @@ export const UpdateVendor = _UpdateVendor;
 export const KitchenManagement = _KitchenManagement;
 export const KitchenMenu = _KitchenMenu;
 export const KitchenManagementAddCategory = _KitchenManagementAddCategory;
+export const KitchenManagementAddItem = _KitchenManagementAddItem;

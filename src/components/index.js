@@ -17,6 +17,7 @@ import _KitchenMenuTable from "./kitchenmenutable";
 import _KitchenManagementAddCategoryForm from "./kitchenmanagementaddcategoryform";
 import _ImageUpload from "./imageuploader";
 import _KitchenManagementAddItemForm from "./kitchenmanagementadditemform";
+import _OrderDetailsScreen from "./orderdetailscreen";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -37,3 +38,4 @@ export const KitchenMenuTable = _KitchenMenuTable;
 export const KitchenManagementAddCategoryForm = _KitchenManagementAddCategoryForm;
 export const ImageUpload = _ImageUpload;
 export const KitchenManagementAddItemForm = _KitchenManagementAddItemForm;
+export const OrderDetailsScreen = _OrderDetailsScreen;

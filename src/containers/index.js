@@ -6,6 +6,7 @@ import _CustomerManagement from "./customermanagement";
 import _AddCustomer from "./addcustomer";
 import _Register from "./register";
 import _RestaurantManagement from "./restaurantmanagement";
+import _OrdertManagement from "./ordermanagement";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -15,3 +16,4 @@ export const CustomerManagement = _CustomerManagement;
 export const AddCustomer = _AddCustomer;
 export const Register = _Register;
 export const RestaurantManagement = _RestaurantManagement;
+export const OrdertManagement = _OrdertManagement;

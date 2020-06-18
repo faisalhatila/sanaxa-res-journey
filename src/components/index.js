@@ -16,6 +16,7 @@ import _KitchenManagementTable from "./kitchenmanagementcategorytable";
 import _KitchenMenuTable from "./kitchenmenutable";
 import _KitchenManagementAddCategoryForm from "./kitchenmanagementaddcategoryform";
 import _ImageUpload from "./imageuploader";
+import _KitchenManagementAddItemForm from "./kitchenmanagementadditemform";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -35,3 +36,4 @@ export const KitchenManagementTable = _KitchenManagementTable;
 export const KitchenMenuTable = _KitchenMenuTable;
 export const KitchenManagementAddCategoryForm = _KitchenManagementAddCategoryForm;
 export const ImageUpload = _ImageUpload;
+export const KitchenManagementAddItemForm = _KitchenManagementAddItemForm;

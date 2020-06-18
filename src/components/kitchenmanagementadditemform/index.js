@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageUpload } from "..";
-const AddCategory = () => {
+const AddItem = () => {
   return (
     <div className="row">
       <div className="col-4 col-lg-3 col-md-3 updateVendorFormTitle">
@@ -66,4 +66,4 @@ const AddCategory = () => {
   );
 };
 
-export default AddCategory;
+export default AddItem;

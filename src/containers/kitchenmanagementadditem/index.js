@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { LeftMenu, KitchenManagementAddCategoryForm } from "../../components";
 
-export default class UpdateVendor extends Component {
+export default class AddItem extends Component {
   render() {
     return (
       <div className="container">

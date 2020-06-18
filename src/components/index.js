@@ -11,6 +11,7 @@ import _CustomerManagementTable from "./customermanagementtable";
 import _NewCustomer from "./newcustomer";
 import _RestaurantManagementTable from "./restaurantmanagementtable";
 import _OrderManagementTable from "./ordermanagementtable";
+import _UpdateVendorForm from "./updatevendorform";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -25,3 +26,4 @@ export const CustomerManagementTable = _CustomerManagementTable;
 export const NewCustomer = _NewCustomer;
 export const RestaurantManagementTable = _RestaurantManagementTable;
 export const OrderManagementTable = _OrderManagementTable;
+export const UpdateVendorForm = _UpdateVendorForm;

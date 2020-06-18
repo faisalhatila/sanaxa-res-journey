@@ -7,6 +7,7 @@ import _AddCustomer from "./addcustomer";
 import _Register from "./register";
 import _RestaurantManagement from "./restaurantmanagement";
 import _OrdertManagement from "./ordermanagement";
+import _UpdateVendor from "./updatevendor";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -17,3 +18,4 @@ export const AddCustomer = _AddCustomer;
 export const Register = _Register;
 export const RestaurantManagement = _RestaurantManagement;
 export const OrdertManagement = _OrdertManagement;
+export const UpdateVendor = _UpdateVendor;

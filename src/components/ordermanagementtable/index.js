@@ -5,45 +5,73 @@ export default class CustomerManagementTable extends Component {
     data: [
       {
         id: 124156,
-        customerName: "Faisal",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124157,
-        customerName: "Hanif",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124158,
-        customerName: "Hatila",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124159,
-        customerName: "Faisal",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124160,
-        customerName: "Hanif",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124161,
-        customerName: "Hatila",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
       {
         id: 124163,
-        customerName: "Faisal",
-        emailAddress: "hatilas1994@gmail.com",
-        address: "Karachi",
+        restaurant: "Alaska Restaurant",
+        customer: "Faisal",
+        foodItem: "Big Burger",
+        totalPrice: 20,
+        dateTime: "09/20-09:pm",
+        paymentMethod: "COD",
+        status: "Pending",
       },
     ],
   };
@@ -75,9 +103,13 @@ export default class CustomerManagementTable extends Component {
                 <input type="checkbox" />
               </th>
               <th>ID</th>
-              <th>Restaurant Name</th>
-              <th>Email Address</th>
-              <th>Address</th>
+              <th>Restaurant</th>
+              <th>Customer</th>
+              <th>Food Item</th>
+              <th>Total Price</th>
+              <th>Date-Time</th>
+              <th>Payment Mode</th>
+              <th>Status</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -89,12 +121,15 @@ export default class CustomerManagementTable extends Component {
                     <input type="checkbox" />
                   </td>
                   <td>{item.id}</td>
-                  <td>{item.customerName}</td>
-                  <td>{item.emailAddress}</td>
-                  <td>{item.address}</td>
+                  <td>{item.restaurant}</td>
+                  <td>{item.customer}</td>
+                  <td>{item.foodItem}</td>
+                  <td>${item.totalPrice}</td>
+                  <td>{item.dateTime}</td>
+                  <td>{item.paymentMethod}</td>
+                  <td>{item.status}</td>
                   <td>
                     <i class="far fa-edit mr-3"></i>
-                    <i class="far fa-trash-alt"></i>
                   </td>
                 </tr>
               );

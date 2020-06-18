@@ -8,8 +8,9 @@ import _Register from "./register";
 import _RestaurantManagement from "./restaurantmanagement";
 import _OrdertManagement from "./ordermanagement";
 import _UpdateVendor from "./updatevendor";
-import _KitchenManagement from "./kitchenmanagement";
+import _KitchenManagement from "./kitchenmanagementcategory";
 import _KitchenMenu from "./kitchenmenu";
+import _KitchenManagementAddCategory from "./kitchenmanagementaddcategory";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -23,3 +24,4 @@ export const OrdertManagement = _OrdertManagement;
 export const UpdateVendor = _UpdateVendor;
 export const KitchenManagement = _KitchenManagement;
 export const KitchenMenu = _KitchenMenu;
+export const KitchenManagementAddCategory = _KitchenManagementAddCategory;

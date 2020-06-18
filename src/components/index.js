@@ -10,6 +10,7 @@ import _BChart from "./barchart";
 import _CustomerManagementTable from "./customermanagementtable";
 import _NewCustomer from "./newcustomer";
 import _RestaurantManagementTable from "./restaurantmanagementtable";
+import _OrderManagementTable from "./ordermanagementtable";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -23,3 +24,4 @@ export const BChart = _BChart;
 export const CustomerManagementTable = _CustomerManagementTable;
 export const NewCustomer = _NewCustomer;
 export const RestaurantManagementTable = _RestaurantManagementTable;
+export const OrderManagementTable = _OrderManagementTable;

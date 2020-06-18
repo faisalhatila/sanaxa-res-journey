@@ -11,6 +11,7 @@ import {
   AddCustomer,
   Register,
   RestaurantManagement,
+  OrdertManagement,
 } from "../containers";
 const Router = (props) => {
   return (
@@ -25,6 +26,7 @@ const Router = (props) => {
         path="/restaurant-management"
         component={RestaurantManagement}
       />
+      <Route exact path="/order-management" component={OrdertManagement} />
       <Route exact path="/add-customer" component={AddCustomer} />
       <Route exact path="/404" component={PageNotFound} />
       <Route exact path="/*" component={() => <Redirect to="/404" />} />

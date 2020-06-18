@@ -153,6 +153,7 @@
   padding: 10px;
 }
 /**************************************************Customer Management Component End***********************************/
+/**************************************************Customer Add Component Start***********************************/
 
 .customerDetailFormTitle {
   /* box-shadow: 0px -3px 5px 2px #ccc; */
@@ -176,3 +177,73 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/**************************************************Customer Add Component End***********************************/
+/**************************************************Register Component Start***********************************/
+.facebookDiv {
+  background-color: #3b5998;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.facebookDiv > i,
+.facebookDiv > p {
+  color: #fff;
+}
+.facebookDiv > p {
+  margin: 0;
+}
+.googleDiv {
+  background-color: #de5246;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.googleDiv > i,
+.googleDiv > p {
+  color: #fff;
+}
+.googleDiv > p {
+  margin: 0;
+}
+.signupScreenRow1 {
+  transform: translateY(5%);
+}
+.signupScreenRow1 > h2,
+.signupScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.genderMainDiv {
+  border: solid 1px #ccc;
+  /* padding: 7px 10px; */
+  border-radius: 5px;
+  justify-content: space-around;
+}
+.genderDiv {
+  min-width: 50%;
+  text-align: center;
+  padding: 5px;
+}
+.dateInputDiv {
+  border: solid 1px #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dateInputDiv > input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  /* display: flex; */
+  min-width: 100%;
+}
+.signUpPageMainDiv {
+  min-width: 100%;
+  min-height: 170vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/**************************************************Register Component End***********************************/

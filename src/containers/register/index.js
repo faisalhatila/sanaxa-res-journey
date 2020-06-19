@@ -18,37 +18,29 @@ class RegisterContainer extends Component {
               <strong>Snaxa</strong>
             </h2>
             <p>Restaurant Login Panel</p>
-            <div className="loginPageFormDiv col-12 col-lg-4 col-md-6 offset-lg-4 offset-md-3 mt-3">
-              <p>Signup With</p>
-              <div className="d-flex facebookDiv mt-3">
-                <i class="fab fa-facebook-f mr-3"></i>
-                <p>Signup With Facebook</p>
-              </div>
-              <div className="d-flex googleDiv mt-3 mb-3">
-                <i class="fab fa-google mr-3"></i>
-                <p>Signup With Facebook</p>
-              </div>
-              <hr />
+            <div className="loginPageFormDiv col-12 col-lg-8 col-md-8 offset-lg-2 offset-md-2 mt-3">
               <p> or Signup For A New Account</p>
               <form className="mt-2">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">First Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Enter First Name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Last Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Enter Last Name"
-                  />
+                <div className="row">
+                  <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter First Name"
+                    />
+                  </div>
+                  <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="exampleInputPassword1">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Enter Last Name"
+                    />
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
@@ -60,23 +52,25 @@ class RegisterContainer extends Component {
                     placeholder="Enter email"
                   />
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Confirm Password</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Confirm Password"
-                  />
+                <div className="row">
+                  <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-group col-12 col-lg-6 col-md-6">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Gender</label>
@@ -122,6 +116,17 @@ class RegisterContainer extends Component {
                   <span className="createAccountLabel">Click to login</span>
                 </p>
               </form>
+              <hr />
+              <div className="d-flex">
+                <div className="d-flex facebookDiv mt-3 col-12 col-lg-6 col-md-6">
+                  <i class="fab fa-facebook-f mr-3"></i>
+                  <p>Signup With Facebook</p>
+                </div>
+                <div className="d-flex googleDiv mt-3 col-12 col-lg-6 col-md-6">
+                  <i class="fab fa-google mr-3"></i>
+                  <p>Signup With Google</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

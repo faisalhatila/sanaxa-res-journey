@@ -17,9 +17,9 @@ class RegisterContainer extends Component {
             <h2>
               <strong>Snaxa</strong>
             </h2>
-            <p>Restaurant Login Panel</p>
+            <p>Restaurant Register Panel</p>
             <div className="loginPageFormDiv col-12 col-lg-8 col-md-8 offset-lg-2 offset-md-2 mt-3">
-              <p> or Signup For A New Account</p>
+              <p>Signup</p>
               <form className="mt-2">
                 <div className="row">
                   <div class="form-group col-12 col-lg-6 col-md-6">
@@ -74,12 +74,6 @@ class RegisterContainer extends Component {
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Gender</label>
-                  {/* <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Password"
-                  /> */}
                   <div className="d-flex genderMainDiv">
                     <div className="genderDiv">Male</div>
                     <div className="genderDiv">Female</div>
@@ -116,7 +110,7 @@ class RegisterContainer extends Component {
                   <span className="createAccountLabel">Click to login</span>
                 </p>
               </form>
-              <hr />
+              {/* <hr /> */}
               <div className="d-flex">
                 <div className="d-flex facebookDiv mt-3 col-12 col-lg-6 col-md-6">
                   <i class="fab fa-facebook-f mr-3"></i>

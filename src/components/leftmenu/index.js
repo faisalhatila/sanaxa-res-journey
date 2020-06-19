@@ -6,13 +6,14 @@ const LeftMenu = () => {
       <div className="container leftMenuContainer">
         <div className="leftMenuMainDiv">
           <h2>
-            <strong>Snaxa</strong>
+            <strong>
+              <img src="assets/img/icons/leftMenu/logo.svg" />
+            </strong>
           </h2>
           <div className="leftMenuMenuLinksMainDiv">
             <ul>
               <li className="mt-3">
                 <div>
-                  {/* <i class="fas fa-border-all mr-2"></i> */}
                   <img
                     src="assets/img/icons/leftMenu/dashboard.svg"
                     className="mr-2"
@@ -20,19 +21,9 @@ const LeftMenu = () => {
                   Dashboard
                 </div>
               </li>
-              {/* <li className="mt-3">
-                <div>
-                  <i class="fas fa-border-all mr-2"></i>
-                  <img
-                    src="assets/img/icons/leftMenu/customerManagement.svg"
-                    className="mr-2"
-                  />
-                  Customer Management
-                </div>
-              </li> */}
+
               <li className="mt-3 d-flex align-items-center justify-content-between">
                 <div>
-                  {/* <i class="fas fa-border-all mr-2"></i> */}
                   <img
                     src="assets/img/icons/leftMenu/customerManagement.svg"
                     className="mr-2"
@@ -43,12 +34,9 @@ const LeftMenu = () => {
                   src="assets/img/icons/leftMenu/dropdown.svg"
                   className="mr-2"
                 />
-
-                {/* <i class="fas fa-caret-down ml-4"></i> */}
               </li>
               <li className="mt-3">
                 <div>
-                  {/* <i class="fas fa-border-all mr-2"></i> */}
                   <img
                     src="assets/img/icons/leftMenu/restaurantManagement.svg"
                     className="mr-2"
@@ -58,7 +46,6 @@ const LeftMenu = () => {
               </li>
               <li className="mt-3">
                 <div>
-                  {/* <i class="fas fa-border-all mr-2"></i> */}
                   <img
                     src="assets/img/icons/leftMenu/orderManagement.svg"
                     className="mr-2"
@@ -68,7 +55,6 @@ const LeftMenu = () => {
               </li>
               <li className="mt-3 d-flex align-items-center justify-content-between">
                 <div>
-                  {/* <i class="fas fa-border-all mr-2"></i> */}
                   <img
                     src="assets/img/icons/leftMenu/kitchenManagement.svg"
                     className="mr-2"
@@ -79,15 +65,12 @@ const LeftMenu = () => {
                   src="assets/img/icons/leftMenu/dropdown.svg"
                   className="mr-2"
                 />
-
-                {/* <i class="fas fa-caret-down ml-4"></i> */}
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    // <div className="col-lg-2 col-md-2">Hello</div>
   );
 };
 

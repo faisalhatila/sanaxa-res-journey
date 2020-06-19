@@ -132,11 +132,23 @@
   margin: 0;
   font-weight: 800;
   font-size: 25px;
+  /* color: #bf282e; */
+}
+.totalSales {
   color: #bf282e;
+}
+.totalCustomers {
+  color: #0579ac;
+}
+.totalOrders {
+  color: #e4001b;
+}
+.totalRestaurants {
+  color: #bfd024;
 }
 .counterRowDataType {
   font-size: 12px;
-  color: #bf282e;
+  /* color: #bf282e; */
   margin: 0;
 }
 /**************************************************Counter Data Component End***********************************/

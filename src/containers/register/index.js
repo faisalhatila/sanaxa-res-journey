@@ -8,7 +8,7 @@ class RegisterContainer extends Component {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(assets/img/loginScreen/background.jpg)",
+            "linear-gradient(0deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(assets/img/loginScreen/Rectangle290.png)",
         }}
         className="signUpPageMainDiv"
       >

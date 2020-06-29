@@ -48,7 +48,7 @@ const Router = (props) => {
         path="/add-category"
         component={KitchenManagementAddCategory}
       />
-      <Route exact path="/add=addons" component={AddAddons} />
+      <Route exact path="/add-addons" component={AddAddons} />
       <Route exact path="/add-item" component={KitchenManagementAddItem} />
       <Route exact path="/kitchen-menu" component={KitchenMenu} />
       <Route exact path="/add-customer" component={AddCustomer} />

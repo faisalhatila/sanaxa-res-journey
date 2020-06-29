@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NewAddon } from "../../components";
+import { NewAddon, LeftMenu } from "../../components";
 
 export default class AddAddons extends Component {
   render() {

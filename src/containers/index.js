@@ -14,6 +14,7 @@ import _KitchenManagementAddCategory from "./kitchenmanagementaddcategory";
 import _KitchenManagementAddItem from "./kitchenmanagementadditem";
 import _OrderDetails from "./orderdetails";
 import _BecomeAPartner from "./becomeapartner";
+import _AddAddons from "./addaddons";
 
 export const HomeContainer = _HomeContainer;
 export const LoginContainer = _LoginContainer;
@@ -31,3 +32,4 @@ export const KitchenManagementAddCategory = _KitchenManagementAddCategory;
 export const KitchenManagementAddItem = _KitchenManagementAddItem;
 export const OrderDetails = _OrderDetails;
 export const BecomeAPartner = _BecomeAPartner;
+export const AddAddons = _AddAddons;

@@ -18,6 +18,7 @@ import _KitchenManagementAddCategoryForm from "./kitchenmanagementaddcategoryfor
 import _ImageUpload from "./imageuploader";
 import _KitchenManagementAddItemForm from "./kitchenmanagementadditemform";
 import _OrderDetailsScreen from "./orderdetailscreen";
+import _NewAddon from "./newaddon";
 
 export const Header = _Header;
 export const Footer = _Footer;
@@ -39,3 +40,4 @@ export const KitchenManagementAddCategoryForm = _KitchenManagementAddCategoryFor
 export const ImageUpload = _ImageUpload;
 export const KitchenManagementAddItemForm = _KitchenManagementAddItemForm;
 export const OrderDetailsScreen = _OrderDetailsScreen;
+export const NewAddon = _NewAddon;

@@ -7,19 +7,17 @@ export default class NewAddon extends Component {
     number: 0,
     desc: "",
     isDisplayAddForm: true,
+    updatedName: "",
+    updatedNumber: "",
+    updatedDesc: "",
   };
   handleAddItemCard = () => {
-    // this.setState({
-    //   name: "",
-    //   number: "",
-    //   desc: "",
-    // });
     const itemObj = {
       itemIndex: itemIndex,
       name: this.state.name,
       price: this.state.number,
       description: this.state.desc,
-      isEditable: true,
+      isDisable: true,
     };
     itemIndex++;
     this.state.items.push(itemObj);
@@ -44,6 +42,23 @@ export default class NewAddon extends Component {
     });
     this.setState({ items });
     console.log(items);
+  };
+  updateItem = (itemIndex) => {
+    let { items } = this.state;
+    const newItem = items.map((item) => {
+      if (item.itemIndex === itemIndex) {
+        const updatedItem = {
+          ...item,
+          isDisable: false,
+        };
+        return updatedItem;
+      }
+      return item;
+    });
+    this.setState({
+      items: newItem,
+    });
+    // console.log(itemIndex);
   };
   handleDisplayAddItemForm = () => {
     this.setState({
@@ -232,7 +247,7 @@ export default class NewAddon extends Component {
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         //   placeholder="Enter email"
-                        disabled={item.isEditable}
+                        disabled={item.isDisable}
                         value={item.name}
                       />
                       {/* <p>{item.name}</p> */}
@@ -244,7 +259,7 @@ export default class NewAddon extends Component {
                         class="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        disabled={item.isEditable}
+                        disabled={item.isDisable}
                         value={item.price}
                         //   placeholder="Enter email"
                       />
@@ -260,7 +275,7 @@ export default class NewAddon extends Component {
                         class="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"
-                        disabled={item.isEditable}
+                        disabled={item.isDisable}
                         value={item.description}
                       ></textarea>
                       {/* <p>{item.description}</p> */}
@@ -270,7 +285,11 @@ export default class NewAddon extends Component {
                     <button type="button" class="btn btn-primary mt-3 mr-4">
                       Save
                     </button>
-                    <button type="button" class="btn btn-primary mt-3 mr-4">
+                    <button
+                      type="button"
+                      class="btn btn-primary mt-3 mr-4"
+                      onClick={() => this.updateItem(item.itemIndex)}
+                    >
                       Edit
                     </button>
                   </div>

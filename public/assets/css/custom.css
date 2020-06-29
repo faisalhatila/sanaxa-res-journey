@@ -10,6 +10,9 @@
 .noMargin {
   margin: 0;
 }
+.snaxaRedFont {
+  color: #e4001b;
+}
 /**************************************************Login Page Start***********************************/
 .loginPageMainDiv {
   min-width: 100%;
@@ -370,4 +373,10 @@
 }
 .becomeAPartnerFormActiveTab {
   border-bottom: solid 2px #b40008;
+}
+
+.addonItemDiv {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding: 20px 20px;
 }

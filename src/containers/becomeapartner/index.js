@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { first } from "lodash";
 
 export default class BecomeAPartner extends Component {
   state = {
@@ -10,6 +11,83 @@ export default class BecomeAPartner extends Component {
     lastNameError: "",
     emailError: "",
     passwordError: "",
+    data: [],
+  };
+  handleFirstNameChange = (event) => {
+    this.setState({
+      firstNameError: "",
+      firstName: event.target.value,
+    });
+  };
+  handleLastNameChange = (event) => {
+    this.setState({
+      lastNameError: "",
+      lastName: event.target.value,
+    });
+  };
+  handleEmailChange = (event) => {
+    this.setState({
+      emailError: "",
+      email: event.target.value,
+    });
+  };
+  handlePasswordChange = (event) => {
+    this.setState({
+      passwordError: "",
+      password: event.target.value,
+    });
+  };
+  validate = () => {
+    const { firstName, lastName, email, password } = this.state;
+    let {
+      firstNameError,
+      lastNameError,
+      emailError,
+      passwordError,
+    } = this.state;
+    if (!firstName) {
+      firstNameError = "Enter First Name";
+    } else {
+      firstNameError = "";
+    }
+    if (!lastName) {
+      lastNameError = "Enter Last Name";
+    } else {
+      lastNameError = "";
+    }
+    if (!email || !email.includes("@")) {
+      emailError = "Enter Valid Email";
+    } else {
+      emailError = "";
+    }
+    if (!password || password.length < 6) {
+      passwordError = "Enter Valid Password Min 6 Characters";
+    } else {
+      passwordError = "";
+    }
+    if (firstNameError || lastNameError || emailError || passwordError) {
+      this.setState({
+        firstNameError,
+        lastNameError,
+        emailError,
+        passwordError,
+      });
+      return false;
+    }
+    return true;
+  };
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const isValid = this.validate();
+    const { firstName, lastName, email, password, data } = this.state;
+    if (isValid) {
+      let collections = [firstName, lastName, email, password];
+      data.push(collections);
+      console.log(data);
+      setTimeout(() => {
+        alert("Perfect");
+      }, 2000);
+    }
   };
   render() {
     const {
@@ -30,7 +108,7 @@ export default class BecomeAPartner extends Component {
         }}
         className="becomeAPartnerPageMainDiv"
       >
-        <div className="container pt-5">
+        <div className="container pt-5 pb-5">
           <div className="becomeAPartnerRow1">
             <img src="assets/img/Logo.svg" />
           </div>
@@ -43,18 +121,70 @@ export default class BecomeAPartner extends Component {
             </div>
             <div className="col-12 col-lg-6 col-md-6">
               <div className="becomeAPartnerPageFormDiv col-12 col-lg-4 col-md-6 offset-lg-4 offset-md-3 mt-3">
-                <p>Login In To Your Account</p>
+                <p className="becomeAPartnerFormTitle">Join Us</p>
+                <div className="formTabDiv d-flex justify-content-around mb-4">
+                  <p className="noMargin blackFont becomeAPartnerFormActiveTab">
+                    Your Details
+                  </p>
+                  <p className="noMargin blackFont">Store Details</p>
+                </div>
                 <form className="mt-2">
                   <div class="form-group">
-                    <label for="exampleInputEmail1">User Name</label>
+                    <label for="exampleInputEmail1">First Name</label>
                     <input
-                      onChange={this.handleEmailChange}
-                      value={email}
-                      type="email"
+                      onChange={this.handleFirstNameChange}
+                      value={firstName}
+                      type="text"
                       class="form-control"
                       id="exampleInputEmail1"
                       aria-describedby="emailHelp"
-                      placeholder="Enter email"
+                      placeholder="Enter First Name"
+                    />
+                    {firstNameError ? (
+                      <div
+                        style={{
+                          textAlign: "center",
+                          color: "red",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {firstNameError}
+                      </div>
+                    ) : null}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input
+                      onChange={this.handleLastNameChange}
+                      value={lastName}
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Last Name"
+                    />
+                    {lastNameError ? (
+                      <div
+                        style={{
+                          textAlign: "center",
+                          color: "red",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {lastNameError}
+                      </div>
+                    ) : null}
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input
+                      onChange={this.handleEmailChange}
+                      value={email}
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Enter Email"
                     />
                     {emailError ? (
                       <div
@@ -76,7 +206,7 @@ export default class BecomeAPartner extends Component {
                       type="password"
                       class="form-control"
                       id="exampleInputPassword1"
-                      placeholder="Password"
+                      placeholder="Enter Password"
                     />
                     {passwordError ? (
                       <div
@@ -90,30 +220,13 @@ export default class BecomeAPartner extends Component {
                       </div>
                     ) : null}
                   </div>
-                  <div class="form-check">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      id="exampleCheck1"
-                      onChange={this.handleCheck}
-                    />
-                    <label class="form-check-label" for="exampleCheck1">
-                      Keep Me Looged In
-                    </label>
-                  </div>
                   <button
                     type="submit"
                     onClick={this.handleSubmit}
                     class="btn btn-primary loginButton mt-2"
                   >
-                    Submit
+                    Next
                   </button>
-                  <p className="createAccountText pt-2 pb-2">
-                    Dont have an account?
-                    <span className="createAccountLabel">
-                      Create an account
-                    </span>
-                  </p>
                 </form>
               </div>
             </div>

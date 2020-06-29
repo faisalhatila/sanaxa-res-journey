@@ -4,6 +4,12 @@
 .whiteFont {
   color: #fff;
 }
+.blackFont {
+  color: #000;
+}
+.noMargin {
+  margin: 0;
+}
 /**************************************************Login Page Start***********************************/
 .loginPageMainDiv {
   min-width: 100%;
@@ -355,4 +361,13 @@
 .becomeAPartnerBigHeading {
   font-size: 40px;
   font-weight: 700;
+}
+.becomeAPartnerFormTitle {
+  text-align: center;
+  color: #b40008;
+  font-weight: 600;
+  font-size: 30px;
+}
+.becomeAPartnerFormActiveTab {
+  border-bottom: solid 2px #b40008;
 }

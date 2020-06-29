@@ -18,6 +18,7 @@ import {
   KitchenManagementAddCategory,
   KitchenManagementAddItem,
   OrderDetails,
+  BecomeAPartner,
 } from "../containers";
 const Router = (props) => {
   return (
@@ -25,6 +26,7 @@ const Router = (props) => {
       <Route exact path="/" component={HomeContainer} />
       <PvtRoute exact path="/login" component={LoginContainer} />
       <PvtRoute exact path="/register" component={Register} />
+      <PvtRoute exact path="/become-a-partner" component={BecomeAPartner} />
       <Route exact path="/dashboard" component={Dashboard} />
       <Route exact path="/customer-management" component={CustomerManagement} />
       <Route

@@ -336,3 +336,23 @@
 .bold {
   font-weight: 600;
 }
+
+.becomeAPartnerPageMainDiv {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.becomeAPartnerPageFormDiv {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px;
+  min-width: 100%;
+  margin: 0;
+}
+.becomeAPartnerBigHeading {
+  font-size: 40px;
+  font-weight: 700;
+}

@@ -74,6 +74,7 @@ export default class NewAddon extends Component {
     });
     this.setState({
       items: newItem,
+      updatedName: newItem,
     });
   };
   handleUpdatedPrice = (itemIndex, event) => {
@@ -90,6 +91,7 @@ export default class NewAddon extends Component {
     });
     this.setState({
       items: newItem,
+      updatedNumber: newItem,
     });
   };
   handleUpdatedDescription = (itemIndex, event) => {
@@ -106,7 +108,25 @@ export default class NewAddon extends Component {
     });
     this.setState({
       items: newItem,
+      updatedDesc: newItem,
     });
+  };
+  handleSaveUpdate = (itemIndex) => {
+    let { items } = this.state;
+    const newItem = items.map((item) => {
+      if (item.itemIndex === itemIndex) {
+        const updatedItem = {
+          ...item,
+          isDisable: true,
+        };
+        return updatedItem;
+      }
+      return item;
+    });
+    this.setState({
+      items: newItem,
+    });
+    console.log(newItem);
   };
 
   handleDisplayAddItemForm = () => {
@@ -344,7 +364,13 @@ export default class NewAddon extends Component {
                     </div>
                   </div>
                   <div className="d-flex">
-                    <button type="button" class="btn btn-primary mt-3 mr-4">
+                    <button
+                      type="button"
+                      class="btn btn-primary mt-3 mr-4"
+                      onClick={() => {
+                        this.handleSaveUpdate(item.itemIndex);
+                      }}
+                    >
                       Save
                     </button>
                     <button

@@ -6,6 +6,7 @@ export default class NewAddon extends Component {
     name: "",
     number: 0,
     desc: "",
+    isDisplayAddForm: false,
   };
   handleAddItemCard = () => {
     this.setState({
@@ -23,8 +24,13 @@ export default class NewAddon extends Component {
     items.push(itemObj);
     console.log(items);
   };
+  handleDisplayAddItemForm = () => {
+    this.setState({
+      isDisplayAddForm: !this.state.isDisplayAddForm,
+    });
+  };
   render() {
-    const { items } = this.state;
+    const { items, isDisplayAddForm } = this.state;
     // console.log(items);
 
     return (
@@ -118,55 +124,71 @@ export default class NewAddon extends Component {
             </div>
             <div className="addItemForm">
               <div className="d-flex justify-content-between">
-                <p className="snaxaRedFont" style={{ fontWeight: 600 }}>
+                <p
+                  className="snaxaRedFont noMargin"
+                  style={{ fontWeight: 600 }}
+                >
                   Enter Item Form
                 </p>
-                <i className="fa fa-bars snaxaRedFont"></i>
+                <i
+                  className="fa fa-bars snaxaRedFont"
+                  onClick={this.handleDisplayAddItemForm}
+                ></i>
               </div>
-              <div className="d-flex">
-                <div class="form-group mr-4">
-                  <label for="exampleInputEmail1">Item Name</label>
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Enter Item Name"
-                    onChange={(e) => this.setState({ name: e.target.value })}
-                    value={this.state.name}
-                  />
+              {isDisplayAddForm ? (
+                <div>
+                  <div className="d-flex">
+                    <div class="form-group mr-4">
+                      <label for="exampleInputEmail1">Item Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Enter Item Name"
+                        onChange={(e) =>
+                          this.setState({ name: e.target.value })
+                        }
+                        value={this.state.name}
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Item Price</label>
+                      <input
+                        class="form-control"
+                        type="number"
+                        placeholder="Enter Quantity"
+                        onChange={(e) =>
+                          this.setState({ number: e.target.value })
+                        }
+                        value={this.state.number}
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">
+                        Item Description
+                      </label>
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Item Description"
+                        onChange={(e) =>
+                          this.setState({ desc: e.target.value })
+                        }
+                        value={this.state.desc}
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={this.handleAddItemCard}
+                    class="btn btn-primary mt-3 mr-4"
+                  >
+                    Add another item
+                  </button>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Item Price</label>
-                  <input
-                    class="form-control"
-                    type="number"
-                    placeholder="Enter Quantity"
-                    onChange={(e) => this.setState({ number: e.target.value })}
-                    value={this.state.number}
-                  />
-                </div>
-              </div>
-              <div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">
-                    Item Description
-                  </label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                    placeholder="Item Description"
-                    onChange={(e) => this.setState({ desc: e.target.value })}
-                    value={this.state.desc}
-                  ></textarea>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={this.handleAddItemCard}
-                class="btn btn-primary mt-3 mr-4"
-              >
-                Add another item
-              </button>
+              ) : null}
             </div>
             {items.map((item) => {
               return (

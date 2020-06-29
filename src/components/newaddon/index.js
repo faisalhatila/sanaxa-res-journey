@@ -1,27 +1,48 @@
 import React, { Component } from "react";
-
+let itemIndex = 0;
 export default class NewAddon extends Component {
   state = {
     items: [],
     name: "",
     number: 0,
     desc: "",
-    isDisplayAddForm: false,
+    isDisplayAddForm: true,
   };
   handleAddItemCard = () => {
-    this.setState({
-      name: "",
-      number: "",
-      desc: "",
-    });
+    // this.setState({
+    //   name: "",
+    //   number: "",
+    //   desc: "",
+    // });
     const itemObj = {
+      itemIndex: itemIndex,
       name: this.state.name,
       price: this.state.number,
       description: this.state.desc,
       isEditable: true,
     };
-    const { items } = this.state;
-    items.push(itemObj);
+    itemIndex++;
+    this.state.items.push(itemObj);
+    this.setState(
+      {
+        items: this.state.items,
+        name: "",
+        number: "",
+        desc: "",
+      },
+      () => {
+        console.log("State", this.state);
+      }
+    );
+  };
+  handleDeleteItemCard = (itemIndex) => {
+    // console.log(props);
+    // alert("hi");
+    let { items } = this.state;
+    items = this.state.items.filter((item) => {
+      return item.itemIndex !== itemIndex;
+    });
+    this.setState({ items });
     console.log(items);
   };
   handleDisplayAddItemForm = () => {
@@ -197,7 +218,10 @@ export default class NewAddon extends Component {
                     <p className="snaxaRedFont" style={{ fontWeight: 600 }}>
                       Addon Item
                     </p>
-                    <i className="fa fa-times snaxaRedFont"></i>
+                    <i
+                      className="fa fa-times snaxaRedFont"
+                      onClick={() => this.handleDeleteItemCard(item.itemIndex)}
+                    ></i>
                   </div>
                   <div className="d-flex">
                     <div class="form-group mr-5">

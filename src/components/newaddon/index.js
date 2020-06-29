@@ -60,6 +60,55 @@ export default class NewAddon extends Component {
     });
     // console.log(itemIndex);
   };
+  handleUpdatedName = (itemIndex, event) => {
+    let { items } = this.state;
+    const newItem = items.map((item) => {
+      if (item.itemIndex === itemIndex) {
+        const updatedItem = {
+          ...item,
+          name: event,
+        };
+        return updatedItem;
+      }
+      return item;
+    });
+    this.setState({
+      items: newItem,
+    });
+  };
+  handleUpdatedPrice = (itemIndex, event) => {
+    let { items } = this.state;
+    const newItem = items.map((item) => {
+      if (item.itemIndex === itemIndex) {
+        const updatedItem = {
+          ...item,
+          price: event,
+        };
+        return updatedItem;
+      }
+      return item;
+    });
+    this.setState({
+      items: newItem,
+    });
+  };
+  handleUpdatedDescription = (itemIndex, event) => {
+    let { items } = this.state;
+    const newItem = items.map((item) => {
+      if (item.itemIndex === itemIndex) {
+        const updatedItem = {
+          ...item,
+          description: event,
+        };
+        return updatedItem;
+      }
+      return item;
+    });
+    this.setState({
+      items: newItem,
+    });
+  };
+
   handleDisplayAddItemForm = () => {
     this.setState({
       isDisplayAddForm: !this.state.isDisplayAddForm,
@@ -246,11 +295,15 @@ export default class NewAddon extends Component {
                         class="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        //   placeholder="Enter email"
                         disabled={item.isDisable}
                         value={item.name}
+                        onChange={(event) =>
+                          this.handleUpdatedName(
+                            item.itemIndex,
+                            event.target.value
+                          )
+                        }
                       />
-                      {/* <p>{item.name}</p> */}
                     </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Item Price</label>
@@ -261,9 +314,13 @@ export default class NewAddon extends Component {
                         aria-describedby="emailHelp"
                         disabled={item.isDisable}
                         value={item.price}
-                        //   placeholder="Enter email"
+                        onChange={(event) =>
+                          this.handleUpdatedPrice(
+                            item.itemIndex,
+                            event.target.value
+                          )
+                        }
                       />
-                      {/* <p>{item.price}</p> */}
                     </div>
                   </div>
                   <div>
@@ -277,8 +334,13 @@ export default class NewAddon extends Component {
                         rows="3"
                         disabled={item.isDisable}
                         value={item.description}
+                        onChange={(event) =>
+                          this.handleUpdatedDescription(
+                            item.itemIndex,
+                            event.target.value
+                          )
+                        }
                       ></textarea>
-                      {/* <p>{item.description}</p> */}
                     </div>
                   </div>
                   <div className="d-flex">

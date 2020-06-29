@@ -1,3 +1,9 @@
+.redBack {
+  background-color: red;
+}
+.whiteFont {
+  color: #fff;
+}
 /**************************************************Login Page Start***********************************/
 .loginPageMainDiv {
   min-width: 100%;

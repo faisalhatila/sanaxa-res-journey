@@ -91,53 +91,57 @@ export default class NewAddon extends Component {
                 />
               </div>
             </div>
-            <div className="d-flex flex-column addonItemDiv">
-              <div className="d-flex justify-content-between">
-                <p className="snaxaRedFont" style={{ fontWeight: 600 }}>
-                  Addon Item
-                </p>
-                <i className="fa fa-times snaxaRedFont"></i>
-              </div>
-              <div className="d-flex">
-                <div class="form-group mr-5">
-                  <label for="exampleInputEmail1">Item Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    //   placeholder="Enter email"
-                  />
+            {[...Array(3)].map((item) => {
+              return (
+                <div className="d-flex flex-column addonItemDiv mt-4">
+                  <div className="d-flex justify-content-between">
+                    <p className="snaxaRedFont" style={{ fontWeight: 600 }}>
+                      Addon Item
+                    </p>
+                    <i className="fa fa-times snaxaRedFont"></i>
+                  </div>
+                  <div className="d-flex">
+                    <div class="form-group mr-5">
+                      <label for="exampleInputEmail1">Item Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        //   placeholder="Enter email"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Item Price</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        //   placeholder="Enter email"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">
+                        Item Description
+                      </label>
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Item Price</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    //   placeholder="Enter email"
-                  />
-                </div>
-              </div>
-              <div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">
-                    Item Description
-                  </label>
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-primary mt-3 mr-5">
+              );
+            })}
+            <button type="button" class="btn btn-primary mt-3 mr-4">
               Add another item
             </button>
 
-            <button type="submit" class="btn btn-primary mt-3">
+            <button type="submit" class="btn btn-primary mt-3 disabled">
               Submit
             </button>
           </form>

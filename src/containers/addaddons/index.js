@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NewAddon } from "../../components";
 
 export default class AddAddons extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class AddAddons extends Component {
         <div className="row">
           <LeftMenu />
           <div className="col-12 col-lg-9 col-md-9 mt-4">
-            {/* <NewCustomer /> */}
+            <NewAddon />
           </div>
         </div>
       </div>

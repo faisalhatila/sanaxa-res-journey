@@ -17,6 +17,7 @@ export default class NewAddon extends Component {
       name: this.state.name,
       price: this.state.number,
       description: this.state.desc,
+      isEditable: true,
     };
     const { items } = this.state;
     items.push(itemObj);
@@ -185,7 +186,7 @@ export default class NewAddon extends Component {
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         //   placeholder="Enter email"
-                        disabled={true}
+                        disabled={item.isEditable}
                         value={item.name}
                       />
                       {/* <p>{item.name}</p> */}
@@ -197,7 +198,7 @@ export default class NewAddon extends Component {
                         class="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        disabled={true}
+                        disabled={item.isEditable}
                         value={item.price}
                         //   placeholder="Enter email"
                       />
@@ -213,7 +214,7 @@ export default class NewAddon extends Component {
                         class="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"
-                        disabled={true}
+                        disabled={item.isEditable}
                         value={item.description}
                       ></textarea>
                       {/* <p>{item.description}</p> */}

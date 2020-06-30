@@ -24,36 +24,43 @@ export default class UpdateVendorForm extends Component {
   handleFirstNameChange = (event) => {
     this.setState({
       firstName: event.target.value,
+      firstNameError: "",
     });
   };
   handleLastNameChange = (event) => {
     this.setState({
       lastName: event.target.value,
+      lastNameError: "",
     });
   };
   handleMobNoChange = (event) => {
     this.setState({
       mobileNo: event.target.value,
+      mobileNoError: "",
     });
   };
   handleEmailChange = (event) => {
     this.setState({
       email: event.target.value,
+      emailError: "",
     });
   };
   handleStoreNameChange = (event) => {
     this.setState({
       storeName: event.target.value,
+      storeNameError: "",
     });
   };
   handleStoreTypeChange = (event) => {
     this.setState({
       storeType: event.target.value,
+      storeTypeError: "",
     });
   };
   handleStoreLocationChange = (event) => {
     this.setState({
       storeLocation: event.target.value,
+      storeLocationError: "",
     });
   };
   handleWebsiteOrSocialLinkChange = (event) => {
@@ -378,7 +385,7 @@ export default class UpdateVendorForm extends Component {
                 </div>
               </div>
             </div>
-            <div>
+            <div className="col">
               <button
                 type="submit"
                 class="btn btn-primary mt-3"

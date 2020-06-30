@@ -1,0 +1,383 @@
+.redBack {
+  background-color: red;
+}
+.whiteFont {
+  color: #fff;
+}
+.blackFont {
+  color: #000;
+}
+.noMargin {
+  margin: 0;
+}
+.snaxaRedFont {
+  color: #e4001b;
+}
+/**************************************************Login Page Start***********************************/
+.loginPageMainDiv {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.loginScreenRow1 {
+  transform: translateY(30%);
+}
+.loginScreenRow1 > h2,
+.loginScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.loginPageFormDiv {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px;
+  /* min-width: 100%; */
+  /* margin: 0; */
+}
+.loginPageFormDiv > p {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+.loginButton {
+  background-color: #b40008;
+  color: #fff;
+  min-width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+}
+.loginButton:hover {
+  background-color: #fff;
+  color: #b40008;
+  box-shadow: 0px 0px 5px 2px;
+}
+.createAccountText {
+  margin: 0;
+  font-size: 13px;
+  text-align: center;
+}
+.createAccountLabel {
+  color: #b40008;
+}
+/**************************************************Login Page End***********************************/
+/**************************************************Top Menu Component Start***********************************/
+.topMenuMainDiv {
+  background-color: #ed1b24;
+}
+.topMenuMainDiv > div > div {
+  padding: 4px 0;
+}
+.topMenuMainDiv > div > div > p {
+  margin: 0;
+  color: #fff;
+}
+.topMenuMainDiv > div > div > div > div > p {
+  margin: 0;
+}
+.topMenuMainDiv > div > div > div > div > i,
+.topMenuMainDiv > div > div > div > i {
+  color: #000;
+}
+.topMenuMainDiv > div > div > div > div > i {
+  font-size: 20px;
+  background-color: #ffd9d9;
+  border-radius: 50%;
+  padding: 10px;
+}
+.userInfoDiv {
+  background-color: #fff;
+  padding: 3px 10px;
+}
+.userName {
+  font-size: 13px;
+  color: #000;
+}
+.userJoiningStartDate {
+  font-size: 10px;
+  transform: translateY(-4px);
+  text-align: center;
+  color: gray;
+}
+/**************************************************Top Menu Component End***********************************/
+/**************************************************Left Menu Component Start***********************************/
+.leftMenuMainDiv {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  min-height: 80vh;
+  margin: 0;
+  text-align: center;
+  color: #ed1b24;
+  padding: 15px;
+}
+.leftMenuContainer {
+  padding-left: 0;
+}
+.leftMenuMenuLinksMainDiv > ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+  font-size: 15px;
+}
+/**************************************************Left Menu Component End***********************************/
+/**************************************************Counter Data Component Start***********************************/
+
+.dataCounterRow {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+.counterRowDataCols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+.counterRowDataIcons {
+  font-size: 50px;
+  color: #bf282e;
+}
+.counterRowDataValues {
+  margin: 0;
+  font-weight: 800;
+  font-size: 25px;
+  /* color: #bf282e; */
+}
+.totalSales {
+  color: #bf282e;
+}
+.totalCustomers {
+  color: #0579ac;
+}
+.totalOrders {
+  color: #e4001b;
+}
+.totalRestaurants {
+  color: #bfd024;
+}
+.counterRowDataType {
+  font-size: 12px;
+  /* color: #bf282e; */
+  margin: 0;
+}
+/**************************************************Counter Data Component End***********************************/
+/**************************************************Graph Component Start***********************************/
+.leftGraph {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+/**************************************************Graph Component End***********************************/
+/**************************************************Customer Management Component Start***********************************/
+.customermanagementtable {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+/**************************************************Customer Management Component End***********************************/
+/**************************************************Customer Add Component Start***********************************/
+
+.customerDetailFormTitle {
+  /* box-shadow: 0px -3px 5px 2px #ccc; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  border-bottom: solid #fff;
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.customerDetailFormMainDiv {
+  /* box-shadow: 0px 0px 4px 2px #ccc; */
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: solid 1px #ccc;
+  transform: translateY(-2px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/**************************************************Customer Add Component End***********************************/
+/**************************************************Register Component Start***********************************/
+.facebookDiv {
+  background-color: #3b5998;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.facebookDiv > i,
+.facebookDiv > p {
+  color: #fff;
+}
+.facebookDiv > p {
+  margin: 0;
+}
+.googleDiv {
+  background-color: #de5246;
+  align-items: baseline;
+  padding: 5px;
+  justify-content: center;
+  border-radius: 5px;
+}
+.googleDiv > i,
+.googleDiv > p {
+  color: #fff;
+}
+.googleDiv > p {
+  margin: 0;
+}
+.signupScreenRow1 {
+  transform: translateY(5%);
+}
+.signupScreenRow1 > h2,
+.signupScreenRow1 > p {
+  margin: 0;
+  text-align: center;
+}
+.genderMainDiv {
+  border: solid 1px #ccc;
+  /* padding: 7px 10px; */
+  border-radius: 5px;
+  justify-content: space-around;
+}
+.genderDiv {
+  min-width: 50%;
+  text-align: center;
+  padding: 5px;
+}
+.dateInputDiv {
+  border: solid 1px #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dateInputDiv > input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  /* display: flex; */
+  min-width: 100%;
+}
+.signUpPageMainDiv {
+  min-width: 100%;
+  min-height: 140vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/**************************************************Register Component End***********************************/
+/**************************************************Update Vendor Form Component End***********************************/
+.updateVendorFormTitle {
+  /* box-shadow: 0px -3px 5px 2px #ccc; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  background-color: #d70d47;
+  color: #fff;
+  border-bottom: solid 1px #d70d47;
+  z-index: 10;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.updateVendorForm > h5 {
+  text-align: center;
+  color: #d70d47;
+  font-weight: 700;
+}
+/**************************************************Update Vendor Form Component End***********************************/
+.statusHeadingDiv {
+  /* border-bottom: solid 1px #ccc; */
+  background-color: #f6f6f6;
+}
+.statusHeadingDiv > div > p {
+  margin: 0;
+  background-color: #f6f6f6;
+  font-weight: 700;
+  /* border-bottom: solid 1px #ccc; */
+  background-color: #f6f6f6;
+  padding: 10px 0;
+}
+.orderDetailsRow1 {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.orderStatusDropdownDiv {
+  padding: 5px;
+}
+.orderDescriptionParaDiv {
+  padding: 5px;
+}
+.orderDescriptionParaDiv > p {
+  margin: 0;
+}
+.orderDescriptionPara {
+  border: solid 1px #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.orderDetailsRow2Col1 {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+}
+.orderDetailsRow2Col1TitleDiv {
+  background-color: #f6f6f6;
+  padding: 5px 10px;
+}
+.orderDetailsRow2Col1TitleDiv > p,
+.orderDetailsRow2Col1DescriptionDiv > p {
+  margin: 0;
+}
+.orderDetailsRow2Col1DescriptionDiv {
+  padding: 5px 10px;
+}
+.bold {
+  font-weight: 600;
+}
+
+.becomeAPartnerPageMainDiv {
+  min-width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.becomeAPartnerPageFormDiv {
+  background-color: #fff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px;
+  min-width: 100%;
+  margin: 0;
+}
+.becomeAPartnerBigHeading {
+  font-size: 40px;
+  font-weight: 700;
+}
+.becomeAPartnerFormTitle {
+  text-align: center;
+  color: #b40008;
+  font-weight: 600;
+  font-size: 30px;
+}
+.becomeAPartnerFormActiveTab {
+  border-bottom: solid 2px #b40008;
+}
+
+.addonItemDiv,
+.addItemForm {
+  box-shadow: 0px 0px 5px 2px #ccc;
+  border-radius: 5px;
+  padding: 20px 20px;
+}

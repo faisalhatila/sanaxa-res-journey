@@ -7,9 +7,6 @@ export default class NewAddon extends Component {
     number: 0,
     desc: "",
     isDisplayAddForm: true,
-    updatedName: "",
-    updatedNumber: "",
-    updatedDesc: "",
   };
   handleAddItemCard = () => {
     const itemObj = {
@@ -152,7 +149,6 @@ export default class NewAddon extends Component {
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                //   placeholder="Enter email"
               />
             </div>
             <div class="form-group">
@@ -193,12 +189,12 @@ export default class NewAddon extends Component {
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="exampleRadios"
-                      id="exampleRadios1"
+                      name="exampleRadiosSec"
+                      id="exampleRadios3"
                       value="option1"
                       checked
                     />
-                    <label class="form-check-label" for="exampleRadios1">
+                    <label class="form-check-label" for="exampleRadios3">
                       Yes
                     </label>
                   </div>
@@ -206,11 +202,11 @@ export default class NewAddon extends Component {
                     <input
                       class="form-check-input"
                       type="radio"
-                      name="exampleRadios"
-                      id="exampleRadios2"
+                      name="exampleRadiosSec"
+                      id="exampleRadios4"
                       value="option2"
                     />
-                    <label class="form-check-label" for="exampleRadios2">
+                    <label class="form-check-label" for="exampleRadios4">
                       No
                     </label>
                   </div>

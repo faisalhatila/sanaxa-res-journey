@@ -1,6 +1,24 @@
 import React, { Component } from "react";
 
 export default class UpdateVendorForm extends Component {
+  state = {
+    firstName: "",
+    lastName: "",
+    mobileNo: "",
+    email: "",
+    storeName: "",
+    storeType: "",
+    storeLocation: "",
+    websiteOrSocialLink: "",
+    firstNameError: "",
+    lastNameError: "",
+    mobileNoError: "",
+    emailError: "",
+    storeNameError: "",
+    storeTypeError: "",
+    storeLocationError: "",
+    websiteOrSocialLink: "",
+  };
   render() {
     return (
       <div className="row">

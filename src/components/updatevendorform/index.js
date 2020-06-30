@@ -18,6 +18,7 @@ export default class UpdateVendorForm extends Component {
     storeTypeError: "",
     storeLocationError: "",
     websiteOrSocialLink: "",
+    data: [],
   };
   render() {
     return (

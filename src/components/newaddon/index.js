@@ -2,11 +2,25 @@ import React, { Component } from "react";
 let itemIndex = 0;
 export default class NewAddon extends Component {
   state = {
+    addOnName: "",
+    addOnIsRequired: false,
+    addOnIsMultipleSelect: "true",
+    addOnQuantity: 1,
     items: [],
     name: "",
     number: 0,
     desc: "",
     isDisplayAddForm: true,
+  };
+  handleAddOnNameChange = (event) => {
+    this.setState({
+      addOnName: event.target.value,
+    });
+  };
+  handleAddOnQuantityChange = (event) => {
+    this.setState({
+      addOnQuantity: event.target.value,
+    });
   };
   handleAddItemCard = () => {
     const itemObj = {
@@ -133,7 +147,6 @@ export default class NewAddon extends Component {
   };
   render() {
     const { items, isDisplayAddForm } = this.state;
-    // console.log(items);
 
     return (
       <div className="row">
@@ -149,19 +162,25 @@ export default class NewAddon extends Component {
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                onChange={this.handleAddOnNameChange}
+                value={this.state.addOnName}
               />
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Required</label>
-              <div className="d-flex">
+              <div
+                className="d-flex"
+                onChange={(e) =>
+                  this.setState({ addOnIsRequired: e.target.value })
+                }
+              >
                 <div class="form-check mr-3">
                   <input
                     class="form-check-input"
                     type="radio"
                     name="exampleRadios"
                     id="exampleRadios1"
-                    value="option1"
-                    checked
+                    value={true}
                   />
                   <label class="form-check-label" for="exampleRadios1">
                     Yes
@@ -173,7 +192,7 @@ export default class NewAddon extends Component {
                     type="radio"
                     name="exampleRadios"
                     id="exampleRadios2"
-                    value="option2"
+                    value={false}
                   />
                   <label class="form-check-label" for="exampleRadios2">
                     No
@@ -184,15 +203,19 @@ export default class NewAddon extends Component {
             <div className="d-flex">
               <div class="form-group mr-5">
                 <label for="exampleInputEmail1">Is Multiple Select</label>
-                <div className="d-flex">
+                <div
+                  className="d-flex"
+                  onChange={(e) =>
+                    this.setState({ addOnIsMultipleSelect: e.target.value })
+                  }
+                >
                   <div class="form-check mr-3">
                     <input
                       class="form-check-input"
                       type="radio"
                       name="exampleRadiosSec"
                       id="exampleRadios3"
-                      value="option1"
-                      checked
+                      value="true"
                     />
                     <label class="form-check-label" for="exampleRadios3">
                       Yes
@@ -204,7 +227,7 @@ export default class NewAddon extends Component {
                       type="radio"
                       name="exampleRadiosSec"
                       id="exampleRadios4"
-                      value="option2"
+                      value="false"
                     />
                     <label class="form-check-label" for="exampleRadios4">
                       No
@@ -212,16 +235,19 @@ export default class NewAddon extends Component {
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Quantity</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  //   placeholder="Enter email"
-                />
-              </div>
+              {this.state.addOnIsMultipleSelect === "true" ? (
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Quantity</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    onChange={this.handleAddOnQuantityChange}
+                    value={this.state.addOnQuantity}
+                  />
+                </div>
+              ) : null}
             </div>
             <div className="addItemForm">
               <div className="d-flex justify-content-between">
@@ -291,9 +317,9 @@ export default class NewAddon extends Component {
                 </div>
               ) : null}
             </div>
-            {items.map((item) => {
+            {items.map((item, i) => {
               return (
-                <div className="d-flex flex-column addonItemDiv mt-4">
+                <div key={i} className="d-flex flex-column addonItemDiv mt-4">
                   <div className="d-flex justify-content-between">
                     <p className="snaxaRedFont" style={{ fontWeight: 600 }}>
                       Addon Item

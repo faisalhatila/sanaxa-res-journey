@@ -20,6 +20,46 @@ export default class UpdateVendorForm extends Component {
     websiteOrSocialLink: "",
     data: [],
   };
+  handleFirstNameChange = (event) => {
+    this.setState({
+      firstName: event.target.value,
+    });
+  };
+  handleLastNameChange = (event) => {
+    this.setState({
+      lastName: event.target.value,
+    });
+  };
+  handleMobNoChange = (event) => {
+    this.setState({
+      mobileNo: event.target.value,
+    });
+  };
+  handleEmailChange = (event) => {
+    this.setState({
+      email: event.target.value,
+    });
+  };
+  handleStoreNameChange = (event) => {
+    this.setState({
+      storeName: event.target.value,
+    });
+  };
+  handleStoreTypeChange = (event) => {
+    this.setState({
+      storeType: event.target.value,
+    });
+  };
+  handleStoreLocationChange = (event) => {
+    this.setState({
+      storeLocation: event.target.value,
+    });
+  };
+  handleWebsiteOrSocialLinkChange = (event) => {
+    this.setState({
+      websiteOrSocialLink: event.target.value,
+    });
+  };
   render() {
     return (
       <div className="row">

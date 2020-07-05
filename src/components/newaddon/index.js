@@ -264,7 +264,7 @@ export default class NewAddon extends Component {
               </div>
               {isDisplayAddForm ? (
                 <div>
-                  <div className="d-flex">
+                  <div className="d-flex flex-column flex-md-row flex-lg-row">
                     <div class="form-group mr-4">
                       <label for="exampleInputEmail1">Item Name</label>
                       <input
@@ -275,6 +275,18 @@ export default class NewAddon extends Component {
                           this.setState({ name: e.target.value })
                         }
                         value={this.state.name}
+                      />
+                    </div>
+                    <div class="form-group mr-4">
+                      <label for="exampleInputEmail1">Item Description</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Item Description"
+                        onChange={(e) =>
+                          this.setState({ desc: e.target.value })
+                        }
+                        value={this.state.desc}
                       />
                     </div>
                     <div class="form-group">
@@ -288,23 +300,6 @@ export default class NewAddon extends Component {
                         }
                         value={this.state.number}
                       />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">
-                        Item Description
-                      </label>
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Item Description"
-                        onChange={(e) =>
-                          this.setState({ desc: e.target.value })
-                        }
-                        value={this.state.desc}
-                      ></textarea>
                     </div>
                   </div>
                   <button
@@ -347,6 +342,23 @@ export default class NewAddon extends Component {
                         }
                       />
                     </div>
+                    <div class="form-group mr-5">
+                      <label for="exampleInputEmail1">Item Description</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        disabled={item.isDisable}
+                        value={item.description}
+                        onChange={(event) =>
+                          this.handleUpdatedDescription(
+                            item.itemIndex,
+                            event.target.value
+                          )
+                        }
+                      />
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Item Price</label>
                       <input
@@ -363,26 +375,6 @@ export default class NewAddon extends Component {
                           )
                         }
                       />
-                    </div>
-                  </div>
-                  <div>
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">
-                        Item Description
-                      </label>
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        disabled={item.isDisable}
-                        value={item.description}
-                        onChange={(event) =>
-                          this.handleUpdatedDescription(
-                            item.itemIndex,
-                            event.target.value
-                          )
-                        }
-                      ></textarea>
                     </div>
                   </div>
                   <div className="d-flex">

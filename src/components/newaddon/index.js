@@ -6,11 +6,18 @@ export default class NewAddon extends Component {
     addOnIsRequired: false,
     addOnIsMultipleSelect: "true",
     addOnQuantity: 1,
+    addOnMinQuantity: 1,
+    addOnMaxQuantity: 1,
     items: [],
     name: "",
     number: 0,
     desc: "",
     isDisplayAddForm: true,
+    priceOnSelectOfAddons: false,
+    editButtonClicked: false,
+    updatedName: "",
+    updatedDescription: "",
+    updatedPrice: "",
   };
   handleAddOnNameChange = (event) => {
     this.setState({
@@ -87,6 +94,9 @@ export default class NewAddon extends Component {
       items: newItem,
       updatedName: newItem,
     });
+    // this.setState({
+    //   updatedName:event.target.value
+    // })
   };
   handleUpdatedPrice = (itemIndex, event) => {
     let { items } = this.state;
@@ -143,6 +153,11 @@ export default class NewAddon extends Component {
   handleDisplayAddItemForm = () => {
     this.setState({
       isDisplayAddForm: !this.state.isDisplayAddForm,
+    });
+  };
+  handlePriceOnSelectAddon = (e) => {
+    this.setState({
+      priceOnSelectOfAddons: e.target.checked,
     });
   };
   render() {
@@ -236,8 +251,8 @@ export default class NewAddon extends Component {
                 </div>
               </div>
               {this.state.addOnIsMultipleSelect === "true" ? (
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Quantity</label>
+                <div class="form-group mr-3">
+                  <label for="exampleInputEmail1">Min Quantity</label>
                   <input
                     type="number"
                     class="form-control"
@@ -245,6 +260,21 @@ export default class NewAddon extends Component {
                     aria-describedby="emailHelp"
                     onChange={this.handleAddOnQuantityChange}
                     value={this.state.addOnQuantity}
+                    style={{ maxWidth: "70px" }}
+                  />
+                </div>
+              ) : null}
+              {this.state.addOnIsMultipleSelect === "true" ? (
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Max Quantity</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    onChange={this.handleAddOnQuantityChange}
+                    value={this.state.addOnQuantity}
+                    style={{ maxWidth: "70px" }}
                   />
                 </div>
               ) : null}
@@ -264,8 +294,8 @@ export default class NewAddon extends Component {
               </div>
               {isDisplayAddForm ? (
                 <div>
-                  <div className="d-flex flex-column flex-md-row flex-lg-row">
-                    <div class="form-group mr-4">
+                  <div className="row flex-column flex-md-row flex-lg-row">
+                    <div class="col form-group">
                       <label for="exampleInputEmail1">Item Name</label>
                       <input
                         class="form-control"
@@ -277,7 +307,7 @@ export default class NewAddon extends Component {
                         value={this.state.name}
                       />
                     </div>
-                    <div class="form-group mr-4">
+                    <div class="form-group col">
                       <label for="exampleInputEmail1">Item Description</label>
                       <input
                         class="form-control"
@@ -289,7 +319,9 @@ export default class NewAddon extends Component {
                         value={this.state.desc}
                       />
                     </div>
-                    <div class="form-group">
+                  </div>
+                  <div className="d-flex align-items-center flex-column flex-md-row flex-lg-row">
+                    <div class="form-group mr-4">
                       <label for="exampleInputEmail1">Item Price</label>
                       <input
                         class="form-control"
@@ -299,7 +331,20 @@ export default class NewAddon extends Component {
                           this.setState({ number: e.target.value })
                         }
                         value={this.state.number}
+                        disabled={this.state.priceOnSelectOfAddons}
                       />
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="defaultCheck1"
+                        onChange={this.handlePriceOnSelectAddon}
+                      />
+                      <label class="form-check-label" for="defaultCheck1">
+                        Price On Select Of Addons
+                      </label>
                     </div>
                   </div>
                   <button
